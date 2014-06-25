@@ -7,5 +7,6 @@
 </head>
 <body>
 <a href="/user/balance.do">check user balance</a>
+
 </body>
 </html>
