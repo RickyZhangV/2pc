@@ -15,31 +15,35 @@
 	
 	<center>
 	<!-- 表单1 -->
-		<form:form path="/user/transfer.do" method="post" commandName="userAccount">
+		<form:form action="transfer.do" method="post" commandName="user1" >
 		<form:hidden path="accountId"/>
+		<input type="hidden" value="${user2.accountId }" name="targetAccountId"/>
 			<table>
 				<tr>
 					<td>用户：${user1.username } </td>
 					<td>账户当前余额： ${user1.balance } </td>
 					<td>输入金额：<form:input	path="transferAmount" /> >>转账给${user2.username }
 					</td>
-					<td><input type="submit"  /></td>
+					<td><input type="submit"/></td>
 				</tr>
 			</table>
 		</form:form>
 	<!-- 表单2 -->
-		<form:form path="/user/transfer.do" method="post"  commandName="userAccount">
+		<form:form action="transfer.do" method="post"  commandName="user2"  >
 		<form:hidden path="accountId"/>
+		<input type="hidden" value="${user1.accountId }" name="targetAccountId"/>
 			<table>
 				<tr>
 					<td>用户：${user2.username } </td>
 					<td>账户当前余额： ${user2.balance } </td>
 					<td>输入金额：<form:input	path="transferAmount" /> >>转账给${user1.username }
 					</td>
-					<td><input type="submit"  /></td>
+					<td><input type="submit" /></td>
 				</tr>
 			</table>
 		</form:form>
+		
+		${info }
 	</center>
 
 </body>
