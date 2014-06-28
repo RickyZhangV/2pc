@@ -103,7 +103,7 @@
                     <driver>mysql</driver>
                     <security>
                         <user-name>root</user-name>
-                        <password>1122525</password>
+                        <password>test123</password>
                     </security>
                     <validation>
                         <valid-connection-checker class-name="org.jboss.jca.adapters.jdbc.extensions.mysql.MySQLValidConnectionChecker"/>
@@ -120,7 +120,7 @@
                     <driver>mysql</driver>
                     <security>
                         <user-name>root</user-name>
-                        <password>1122525</password>
+                        <password>test123</password>
                     </security>
                     <validation>
                         <valid-connection-checker class-name="org.jboss.jca.adapters.jdbc.extensions.mysql.MySQLValidConnectionChecker"/>
